@@ -15,6 +15,13 @@ En egen övningssida för multiplikation och division för låg- och mellanstadi
 - **Flera elever på samma enhet:** varje elev väljer sitt namn och sitt djur när sidan öppnas. Inget lösenord, inget konto.
 - Resultat sparas bara lokalt i webbläsaren (`localStorage`), separat för varje elev. Under **För lärare och föräldrar** (länk längst ner) finns en översikt över alla elever, och resultaten kan **exporteras till en fil** och **importeras** på en annan dator.
 
+## Var sparas resultaten?
+Allt sparas i webbläsarens lokala lagring (`localStorage`) på datorn – inget skickas någonstans.
+Det betyder:
+- Varje webbläsare och varje Windows-användare har sina egna data (Edge ser inte det som sparats i Chrome).
+- Data försvinner om webbläsardata rensas eller om skolans datorer återställs vid utloggning.
+- **Gör därför en säkerhetskopia:** *För lärare och föräldrar → Exportera alla till fil*. Med *Importera från fil* läser du in den igen, även på en annan dator.
+
 ## Innehåll
 | Del | Vad den gör |
 |---|---|
@@ -26,6 +33,7 @@ En egen övningssida för multiplikation och division för låg- och mellanstadi
 | Tabellen | Multiplikationstabellen 12 × 12. Tryck på en ruta och se talet som en rektangel av prickar. Svaren kan gömmas. Kan skrivas ut |
 | Kalkylblad | Skapar arbetsblad: vanliga uppgifter, saknat tal eller dra streck. Med facit |
 | Spel | Memory (1–2 spelare), Tabellregn och Duell (två spelare på samma surfplatta) |
+| Arcade | Fyra egna arkadspel med piltangenter och mellanslag: **Rymdkanonen** (skjut skeppet med rätt svar), **Sifferormen** (styr ormen till rätt tal), **Tegelkrossen** (studsa bollen på stenen med rätt svar) och **Över ån** (hoppa på båten med rätt svar). Rekord per elev, fel svar hamnar bland knepiga, ljud av som standard |
 | Troféskåp | Alla medaljer, djurkort, diplom och rekord |
 | Knep | Varje tabell har ett knep (t.ex. fingertricket för 9:ans och "5, 6, 7, 8" för 7:ans). Division: "gånger baklänges" |
 | Mina knepiga | Tal som eleven svarat fel på eller tänkt länge på (över 8 sekunder) övas extra tills de klarats 3 gånger i rad |
@@ -51,6 +59,7 @@ js/practice.js    de 5 övningsstegen för varje tabell
 js/tests.js       Snabbtest, 100 sekunder, Diplom
 js/tools.js       Tabellen, Kalkylblad, Troféskåp
 js/games.js       Memory, Tabellregn, Duell
+js/arcade.js      arkadmotor + Rymdkanonen, Sifferormen, Tegelkrossen, Över ån
 sw.js, manifest.json, icon.svg   installerbar app (bara via http/https)
 ```
 
