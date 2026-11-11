@@ -647,3 +647,13 @@ p { margin: 0 0 .8em; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* ---------- arcade ---------- */
+.arc-wrap { position: relative; max-width: 960px; margin: 0 auto; }
+canvas.arc { display: block; width: 100%; height: auto; aspect-ratio: 800 / 560; border: 3px solid var(--ink); border-radius: var(--r); background: var(--paper); box-shadow: 0 6px 0 var(--ink); outline: none; }
+canvas.arc:focus-visible { box-shadow: 0 6px 0 var(--ink), 0 0 0 4px var(--marker); }
+.arc-bar { display: flex; gap: 10px; align-items: center; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+.arc-end { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(29, 43, 92, .45); border-radius: var(--r); padding: 12px; }
+.arc-end-card { background: #fff; border: 3px solid var(--ink); border-radius: 20px; padding: 22px 30px; text-align: center; box-shadow: 0 8px 0 var(--ink); max-width: 420px; width: 100%; }
+.keys-help { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+kbd { display: inline-block; min-width: 1.8em; padding: 1px 7px; border: 2px solid var(--ink); border-bottom-width: 4px; border-radius: 7px; background: #fff; font-family: var(--display); font-weight: 600; font-size: .9em; text-align: center; }

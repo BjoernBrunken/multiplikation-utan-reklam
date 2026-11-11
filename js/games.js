@@ -11,6 +11,13 @@
       card('#/spel/memory', '?', 'Memory', 'Hitta paren: en fråga och dess svar. Ensam eller två och två.') +
       card('#/spel/regn', '☂', 'Tabellregn', 'Droppar med frågor faller. Skriv svaret innan de når marken!') +
       card('#/spel/duell', '⚔', 'Duell', 'Två spelare på samma skärm. Den som först trycker rätt får poängen.') +
+      '</div>' +
+      '<div class="section-title"><h2>Arcade</h2><span class="muted">Spela med piltangenterna och mellanslag</span></div>' +
+      '<div class="big-links four game-cards">' +
+      card('#/spel/rymd', '🚀', 'Rymdkanonen', 'Skjut rymdskeppet som har rätt svar.') +
+      card('#/spel/ormen', '🐛', 'Sifferormen', 'Styr ormen till rätt tal så växer den.') +
+      card('#/spel/tegel', '🧱', 'Tegelkrossen', 'Studsa bollen på stenen med rätt svar.') +
+      card('#/spel/an', '⛵', 'Över ån', 'Hoppa på båten med rätt svar och ta dig över.') +
       '</div>';
     function card(h, i, t, p) { return '<a class="big-link" href="' + h + '"><span class="icon" aria-hidden="true">' + i + '</span><span><h3>' + t + '</h3><p>' + p + '</p></span></a>'; }
   });
