@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+  Tabellträning – multiplikation utan reklam
+  Copyright (C) 2026 Björn Brunken
+  Fri programvara under GNU General Public License v3.0 (se LICENSE).
+  https://github.com/BjoernBrunken/multiplikation-utan-reklam
+-->
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabellträning – öva multiplikation utan reklam</title>
+  <meta name="description" content="Öva multiplikationstabellen och division. Ingen reklam, inget konto, fungerar utan internet.">
+  <meta name="theme-color" content="#1D2B5C">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">7·8</span> Tabellträning</a>
+      <nav class="nav" aria-label="Huvudmeny">
+        <a href="#/" data-nav="/">Öva</a>
+        <a href="#/testa" data-nav="/testa">Testa</a>
+        <a href="#/spel" data-nav="/spel">Spel</a>
+        <a href="#/tabellen" data-nav="/tabellen">Tabellen</a>
+        <a href="#/pokaler" data-nav="/pokaler">Troféskåp</a>
+      </nav>
+      <a class="who" id="who" href="#/vem"></a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript><p>Tabellträning behöver JavaScript. Slå på JavaScript i webbläsaren.</p></noscript>
+  </main>
+
+  <footer class="foot">
+    Ingen reklam · inget konto · inget skickas någonstans. Allt sparas bara på den här enheten.
+    <a href="#/vuxen">För lärare och föräldrar</a> · <a href="#/om">Om sidan</a><br>
+    Gjord av Björn Brunken · Fri programvara (GPL-3.0) · <a href="https://github.com/BjoernBrunken/multiplikation-utan-reklam" target="_blank" rel="noopener">Källkod på GitHub</a>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/learn.js"></script>
+  <script src="js/profiles.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/practice.js"></script>
+  <script src="js/tests.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/classroom.js"></script>
+  <script>MT.start();</script>
+</body>
+</html>
